@@ -62,6 +62,12 @@ const diagonalGamePlayerX = [
 	'O', '', 'X',
 ];
 
+const diagonalGamePlayerO = [
+	'O', '', '',
+	'X', 'O', '',
+	'X', '', 'O',
+];
+
 describe('Game Scenarios', () => {
 	it('should return "Player X won!" when the input is a vertical line of "X"', () => {
 		expect(ticTacToe(verticalGamePlayerX)).toBe('Player X won!');
@@ -81,5 +87,9 @@ describe('Game Scenarios', () => {
 
 	it('should return "Player X won!" when the input is a diagonal line of "X"', () => {
 		expect(ticTacToe(diagonalGamePlayerX)).toBe('Player X won!');
+	});
+
+	it('should return "Player O won!" when the input is a diagonal line of "O"', () => {
+		expect(ticTacToe(diagonalGamePlayerO)).toBe('Player O won!');
 	});
 });

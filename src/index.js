@@ -12,21 +12,20 @@ function ticTacToe(gameInput) {
 			return false;
 		}
 		if (gameInput[indexGame] === 'X') {
-			if (gameInput[indexGame + 3] === 'X' && gameInput[indexGame + 6] === 'X') {
-				playerWinner = 'Player X won!';
-			}
-			if (gameInput[indexGame + 1] === 'X' && gameInput[indexGame + 2] === 'X') {
-				playerWinner = 'Player X won!';
-			}
-			if (gameInput[indexGame + 4] === 'X' && gameInput[indexGame + 8] === 'X') {
+			if (
+				(gameInput[indexGame + 3] === 'X' && gameInput[indexGame + 6] === 'X') ||
+				(gameInput[indexGame + 1] === 'X' && gameInput[indexGame + 2] === 'X') ||
+				(gameInput[indexGame + 4] === 'X' && gameInput[indexGame + 8] === 'X')
+			) {
 				playerWinner = 'Player X won!';
 			}
 		}
 		if (gameInput[indexGame] === 'O') {
-			if (gameInput[indexGame + 3] === 'O' && gameInput[indexGame + 6] === 'O') {
-				playerWinner = 'Player O won!';
-			}
-			if (gameInput[indexGame + 1] === 'O' && gameInput[indexGame + 2] === 'O') {
+			if (
+				(gameInput[indexGame + 3] === 'O' && gameInput[indexGame + 6] === 'O') ||
+				(gameInput[indexGame + 1] === 'O' && gameInput[indexGame + 2] === 'O') ||
+				(gameInput[indexGame + 4] === 'O' && gameInput[indexGame + 8] === 'O')
+			) {
 				playerWinner = 'Player O won!';
 			}
 		}
