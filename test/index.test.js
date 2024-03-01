@@ -37,6 +37,11 @@ const verticalGamePlayerO = [
 	'O', 'X', '',
 	'O', '', 'X',
 ];
+const horizontalGamePlayerX = [
+	'O', '', '',
+	'X', 'X', 'X',
+	'O', '', 'O',
+];
 const horizontalGamePlayerO = [
 	'X', '', '',
 	'O', 'O', 'O',
@@ -50,6 +55,10 @@ describe('Game Scenarios', () => {
 
 	it('should return "Player O won!" when the input is a vertical line of "O"', () => {
 		expect(ticTacToe(verticalGamePlayerO)).toBe('Player O won!');
+	});
+
+	it('should return "Player X won!" when the input is a horizontal line of "X"', () => {
+		expect(ticTacToe(horizontalGamePlayerX)).toBe('Player X won!');
 	});
 
 	it('should return "Player O won!" when the input is a horizontal line of "O"', () => {
