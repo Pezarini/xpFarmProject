@@ -6,6 +6,11 @@ function ticTacToe(gameInput) {
 	}
 
 	for (let indexGame = 0; indexGame < gameInput.length; indexGame++) {
+		const upperCaseInput = gameInput[indexGame].toUpperCase();
+
+		if (upperCaseInput !== gameInput[indexGame]) {
+			return false;
+		}
 		if (gameInput[indexGame] === 'X') {
 			if (gameInput[indexGame + 3] === 'X' && gameInput[indexGame + 6] === 'X') {
 				playerWinner = 'Player X won!';

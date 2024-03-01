@@ -4,6 +4,11 @@ const incorrectGameFormat = [
 	'X', '',
 	'', 'X', '',
 	'', 'X', 'O',
+];
+const caseSensitive = [
+	'X', '', 'o',
+	'', 'X', '',
+	'', 'X', 'O',
 ]
 describe('Restrictions', () => {
 	it('should return false when the input is not an array', () => {
@@ -12,6 +17,10 @@ describe('Restrictions', () => {
 
 	it('should return false when the array length is different than 9', () => {
 		expect(ticTacToe(incorrectGameFormat)).toBe(false)
+	});
+
+	it('should return false when the strings of array is not upper case', () => {
+		expect(ticTacToe(caseSensitive)).toBe(false)
 	});
 });
 
