@@ -31,6 +31,19 @@ function ticTacToe(gameInput) {
 		}
 	};
 
+	if (
+		(gameInput[2] === 'X' && gameInput[3] === 'X') || 
+		(gameInput[5] === 'X' && gameInput[6] === 'X') || 
+		(gameInput[2] === 'O' && gameInput[3] === 'O') || 
+		(gameInput[5] === 'O' && gameInput[6] === 'O')
+	) {
+		playerWinner = '';
+	} 
+
+	if (!playerWinner) {
+		return 'Game ends with a draw!';
+	}
+
 	return playerWinner;
 };
 
