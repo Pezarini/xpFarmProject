@@ -14,3 +14,15 @@ describe('Restrictions', () => {
 		expect(ticTacToe(incorrectGameFormat)).toBe(false)
 	});
 });
+
+const verticalGameX = [
+	'X', '', '',
+	'X', 'O', '',
+	'X', '', 'O',
+];
+
+describe('Game Scenarios', () => {
+	it('should return "Player X won!" when the input is a vertical line of "X"', () => {
+		expect(ticTacToe(verticalGameX)).toBe('Player X won!');
+	});
+});
