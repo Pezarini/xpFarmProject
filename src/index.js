@@ -15,6 +15,9 @@ function ticTacToe(gameInput) {
 			if (gameInput[indexGame + 3] === 'O' && gameInput[indexGame + 6] === 'O') {
 				playerWinner = 'Player O won!';
 			}
+			if (gameInput[indexGame + 1] === 'O' && gameInput[indexGame + 2] === 'O') {
+				playerWinner = 'Player O won!';
+			}
 		}
 	};
 

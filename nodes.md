@@ -23,3 +23,6 @@ The exercise involves developing a Tic-Tac-Toe game strictly adhering to the TDD
 ## Pomodoro 2 🍅 Driver: Pk
 	- Player X won with a vertical line (continuation) ✅
 	- Player O won with a vertical line ✅
+
+# Pomodoro 3 🍅 Driver: Pk
+	- Player O won with a horizontal line
